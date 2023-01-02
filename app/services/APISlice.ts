@@ -8,7 +8,7 @@ import { getUserToken } from '../../utils/userAuthToken'
 
 export const adminsAPI = createApi({
     reducerPath: 'adminsAPI',
-
+    
     baseQuery: fetchBaseQuery({
         // baseUrl: getBaseURL('localhost'),
         baseUrl: 'https://jsonplaceholder.typicode.com/',
