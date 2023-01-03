@@ -5,14 +5,16 @@ module.exports = {
     './components/**/*.{ts,tsx,js,jsx}',
   ],
   extend: {
+   
+  },
+  theme: {
     screens: {
-      'smallLaptop':{'max':'1100px'},
-      'smallTab':{'max':'700px'},
-      // 'justSmall':{'max':'1600px'},
-      // 'smallLaptops': {'max': '1360px'},
-      // 'tabs': {'max': '1164px'},
-      // => @media (max-width: 1279px) { ... }
-    }
+      'sm': {'max':'480px'},
+      'md': {'max':'800px'},
+      'lg': {'max':'1000px'},
+      'xl': {'max':'1550px'}
+    },
+    extend: {},
   },
   plugins: [],
 }
