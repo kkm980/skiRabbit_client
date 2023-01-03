@@ -45,9 +45,9 @@ const Error: React.FC<IProps> = () => {
                     
                     <div className="overflow-hidden bg-[url('/assets/thanos.jpg')] bg-no-repeat bg-cover bg-center object-cover w-full mt-[0px] overflow-none scrollbar-hidden z-0 h-[90vh] flex flex-col items-center justify-center">
                         <div className="flex flex-col  w-[100%] justify-center items-center text-6xl w-[80%] sm:text-2xl">
-                            <h4 className="text-center">
+                            <h2 className="text-center text-[yellow]">
                                 Oh Snap! You are all alone here
-                            </h4>
+                            </h2>
                             <p className="animate-bounce mt-2">
                                 404
                             </p>

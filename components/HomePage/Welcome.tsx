@@ -27,7 +27,7 @@ const Welcome: React.FC<IProps> =()=>{
                     </div>
                     <div className='mt-[40px] rounded rounded-lg w-[100%] h-auto grid gap-5 grid-cols-4 border border-[text-sky-400] p-2 bg-[#4B5D67]'>
                      {FeaturesConfig.map((e:string, i:number)=>(
-                        <FeaturesChips text={e}/>
+                        <FeaturesChips text={e} key={e}/>
                      ))}
                     </div>
                 </div>
