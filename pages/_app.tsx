@@ -11,17 +11,19 @@ import NavBar from '../components/general/NavBar';
 export default function App({ Component, pageProps }: AppProps) {
 
   const [isFetching, setIsFetching] = useState(false);
-
+  const [isOpen, setOpen] = useState(false);
   useEffect(() => {
     console.log(isFetching, "isdfgh")
   }, [isFetching])
 
   return <Provider store={store}>
-    <div className='h-screen font-inter flex flex-col overflow-x-hidden overflow-y-auto hide-scrollbar relative bg-[#2B4F60]'>
+    <div className='h-screen font-inter flex flex-col overflow-x-hidden overflow-y-auto hide-scrollbar relative bg-[#2B4F60]'
+    onClick={()=>{setOpen(false)}}
+    >
 
       {isFetching ? <LoaderScreen /> : <></>}
 
-      <NavBar />
+      <NavBar {...{isOpen, setOpen}}/>
       <div className='mt-[80px]'>
         <Component {...{ pageProps, setIsFetching }} />
       </div>
