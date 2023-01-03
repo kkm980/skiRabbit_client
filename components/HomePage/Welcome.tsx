@@ -23,7 +23,7 @@ const Welcome: React.FC<IProps> =()=>{
                         Explore the crypto world. Buy and sell cryptocurrencies easily on SkiiRabbit
                     </div>
                     <div className='mt-4'>
-                        <button className='text-white w-full mt-2 p-2 bg-gradient-to-tr from-black via-black to-fuchsia-600 rounded-full cursor-pointer'>Connect Wallet</button>
+                        <button className='text-white w-full mt-2 p-2 bg-gradient-to-tr from-black via-black to-fuchsia-600 rounded-full cursor-pointer hover:scale-105 ease-in duration-500'>Connect Wallet</button>
                     </div>
                     <div className='mt-[40px] rounded rounded-lg w-[100%] h-auto grid gap-5 grid-cols-4 border border-[text-sky-400] p-2 bg-[#4B5D67]'>
                      {FeaturesConfig.map((e:string, i:number)=>(
@@ -77,7 +77,7 @@ const Welcome: React.FC<IProps> =()=>{
                       <div className='h-[1px] w-full bg-gray-400 my-2'/>
                       {/* {isLoading?<Loader/>
                       : */}
-                      <button className='m-2 text-white w-[95%] mt-2 p-2 bg-[#8e57ed] rounded-full cursor-pointer'>Send Now</button>
+                      <button className='m-2 text-white w-[95%] mt-2 p-2 bg-[#8e57ed] rounded-full cursor-pointer hover:scale-105 ease-in duration-500'>Send Now</button>
                     
 
                    </div>

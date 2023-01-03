@@ -32,14 +32,14 @@ const NavBar: React.FC<IProps> = () => {
         />
       </Link>
 
-      <div className="flex-initial w-[full] md:w-[auto] mx-[25px] md:mr-[0px] ml-[50px] justify-between md:justify-start md:flex-col text-xl font-semibold relative font-sans">
+      <div className="flex-initial w-[full] md:w-[auto] mx-[25px] md:mr-[0px] ml-[50px] justify-between md:justify-start md:flex-col text-xl relative font-sans z-99">
         <div className='flex justify-between md:hidden'>
           {NavBarConfig.map((e: any, i: number) => (
-            <Link key={i} href={e.link}><div className="text-[white] bg-[#607682] mr-2 rounded rounded-[16px] py-[4px] px-[18px] border-2 border-transparent hover:border-[#607682] hover:bg-[black] hover:text-[#607682] cursor-pointer">{e.name}</div></Link>
+            <Link key={i} href={e.link}><div className="text-[white] bg-[#607682] mr-2 rounded rounded-[16px] py-[4px] px-[18px] border-2 border-transparent hover:border-[#607682] hover:bg-[black] hover:text-[#607682] cursor-pointer hover:scale-105 ease-in duration-500 ">{e.name}</div></Link>
           ))}
           <Link href="/login"><div className="text-[white] rounded rounded-[16px] mr-2 py-[4px] px-[18px] border-2 border-transparent bg-[#533483] hover:bg-[#0F3460] cursor-pointer">Login</div></Link>
         </div>
-        <div className={`hidden md:flex md:flex-col md:items-end ${isOpen && 'bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40'} ${isOpen && 'w-[200px]'} ${isOpen && 'min-h-[100vh]'} ${isOpen && 'justify-between'} pr-[20px] absolute right-[-30px] top-[-0px]`}>
+        <div className={`hidden md:flex md:flex-col md:items-end ${isOpen && 'bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40'} ${isOpen && 'w-[200px]'} ${isOpen && 'min-h-[100vh]'} ${isOpen && 'justify-between'} pr-[20px] absolute right-[-30px] top-[-0px] z-[99]`}>
           <div className={`absolute z-80 top-[15px] left-[-60px] ${isOpen && "left-[0px]"}`}>
             <Hamburger toggled={isOpen} toggle={setOpen} color='red' size={20} rounded />
           </div>

@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import {Provider} from 'react-redux';
-import {store} from '../store'
+import { Provider } from 'react-redux';
+import { store } from '../store'
 import { useEffect, useState } from 'react';
 import 'tailwindcss/tailwind.css'
 
@@ -10,22 +10,22 @@ import NavBar from '../components/general/NavBar';
 
 export default function App({ Component, pageProps }: AppProps) {
 
-  const [isFetching, setIsFetching]=useState(false);
+  const [isFetching, setIsFetching] = useState(false);
 
-  useEffect(()=>{
-     console.log(isFetching,"isdfgh")
-  },[isFetching])
+  useEffect(() => {
+    console.log(isFetching, "isdfgh")
+  }, [isFetching])
 
   return <Provider store={store}>
     <div className='h-screen font-inter flex flex-col overflow-x-hidden overflow-y-auto hide-scrollbar relative bg-[#2B4F60]'>
-      
-      {isFetching?<LoaderScreen/>:<></>}
 
-      <NavBar/>
+      {isFetching ? <LoaderScreen /> : <></>}
+
+      <NavBar />
       <div className='mt-[80px]'>
         <Component {...{ pageProps, setIsFetching }} />
       </div>
-      
+
 
     </div>
 
