@@ -17,12 +17,12 @@ export default function App({ Component, pageProps }: AppProps) {
   },[isFetching])
 
   return <Provider store={store}>
-    <div className='h-screen font-inter flex flex-col overflow-x-hidden overflow-y-auto hide-scrollbar'>
+    <div className='h-screen font-inter flex flex-col overflow-x-hidden overflow-y-auto hide-scrollbar relative bg-[#2B4F60]'>
       
       {isFetching?<LoaderScreen/>:<></>}
 
       <NavBar/>
-      <div className=' mt-[80px]'>
+      <div className='mt-[80px]'>
         <Component {...{ pageProps, setIsFetching }} />
       </div>
       

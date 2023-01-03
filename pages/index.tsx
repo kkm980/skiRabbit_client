@@ -2,11 +2,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-
+import 'tailwindcss/tailwind.css'
 import React, { useEffect, useState, useContext } from 'react'
 
 
 import { useCreateTeamMutation } from '../app/services/APISlice'
+import { Welcome } from '../components'
 
 
 interface IProps {}
@@ -21,10 +22,8 @@ const Home: React.FC<IProps> = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          FG Fg gF ggdfgdfgd
-        </div>
+      <main>
+       <Welcome/>
       </main>
     </>
   )
