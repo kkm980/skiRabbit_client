@@ -26,7 +26,8 @@ const NavBar: React.FC<IProps> = ({ isOpen, setOpen }) => {
     >
       <div className='w-[70%] flex justify-between items-center lg:w-[100%]'>
 
-        <Link href="/" className='lg:ml-[10px]'>
+        <Link href="/" className='lg:ml-[10px] hover:scale-90 
+        hover:transition-all ease-in-out duration-900'>
           <Image
             // loader={myLoader}
             src="/assets/logo_skiRabbit.gif"
@@ -44,7 +45,7 @@ const NavBar: React.FC<IProps> = ({ isOpen, setOpen }) => {
                py-[4px] px-[18px] border-2 border-transparent hover:border-[#607682] hover:bg-[black] 
                hover:text-[#607682] cursor-pointer hover:scale-105 ease-in duration-500 ">{e.name}</div></Link>
             ))}
-            <Link href="/login"><div className="text-[white] rounded rounded-[28px] mr-2 lg:mr-4 py-[4px] 
+            <Link href="/login"><div className="text-[#FBF1D3] rounded rounded-[28px] mr-2 lg:mr-4 py-[4px] 
             px-[18px] border-2 border-transparent bg-[#533483] hover:bg-[#0F3460] cursor-pointer">Login</div></Link>
           </div>
           <div className={`hidden md:flex md:flex-col md:items-end 

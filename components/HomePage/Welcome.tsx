@@ -25,7 +25,7 @@ const Welcome: React.FC<IProps> =()=>{
                         Explore the crypto world. Buy and sell cryptocurrencies easily on SkiiRabbit
                     </div>
                     <div className='mt-4 w-[100%] px-[5px] md:w-[400px]'>
-                        <div className='flex justify-center items-center sm:w-[60%] text-white mt-2 p-2 
+                        <div className='flex justify-center items-center sm:w-[60%] text-[#FBF1D3] mt-2 p-2 
                         rounded-full bg-gradient-to-tr from-black via-black to-fuchsia-600 rounded-full 
                         cursor-pointer hover:scale-105 ease-in duration-500 z-30'>Connect Wallet</div>
                     </div>
@@ -92,7 +92,7 @@ const Welcome: React.FC<IProps> =()=>{
                       <div className='h-[1px] w-full bg-gray-400 my-2'/>
                       {/* {isLoading?<Loader/>
                       : */}
-                      <button className='m-2 mb-3 text-white w-[95%] mt-2 p-2 bg-[#8e57ed] rounded-full cursor-pointer 
+                      <button className='m-2 mb-3 text-[#FBF1D3] w-[95%] mt-2 p-2 bg-[#8e57ed] rounded-full cursor-pointer 
                       hover:scale-105 ease-in duration-500'>Send Now</button>
                     
 
