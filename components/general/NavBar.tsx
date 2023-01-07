@@ -40,7 +40,7 @@ const NavBar: React.FC<IProps> = ({ isOpen, setOpen }) => {
         md:justify-start md:flex-col text-xl relative font-sans z-99">
           <div className='flex justify-between md:hidden'>
             {NavBarConfig.map((e: any, i: number) => (
-              <Link key={i} href={e.link}><div className="text-[white] bg-[#607682] mr-2 rounded rounded-[28px]
+              <Link key={i} href={e.link}><div className="text-[#FBF1D3] bg-[#607682] mr-2 rounded rounded-[28px]
                py-[4px] px-[18px] border-2 border-transparent hover:border-[#607682] hover:bg-[black] 
                hover:text-[#607682] cursor-pointer hover:scale-105 ease-in duration-500 ">{e.name}</div></Link>
             ))}

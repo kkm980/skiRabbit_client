@@ -18,10 +18,10 @@ const Welcome: React.FC<IProps> =()=>{
 
                 <div className="flex flex-col w-[40%] md:w-[90%] md:mb-[70px] h-[60vh] md:h-[auto] text-white">
                
-                    <div className="text-[40px] leading-none smallTab:text-[30px]">
+                    <div className="text-[40px] text-[#82C3EC] leading-none smallTab:text-[30px]">
                         Send Crypto across the world
                     </div>
-                    <div className="text-[15px] mt-[20px] decoration-sky-600">
+                    <div className="text-[15px] text-[#80a2d9] mt-[20px] decoration-sky-600">
                         Explore the crypto world. Buy and sell cryptocurrencies easily on SkiiRabbit
                     </div>
                     <div className='mt-4 w-[100%] px-[5px] md:w-[400px]'>
@@ -30,7 +30,7 @@ const Welcome: React.FC<IProps> =()=>{
                         cursor-pointer hover:scale-105 ease-in duration-500 z-30'>Connect Wallet</div>
                     </div>
                     <div className='mt-[40px] rounded rounded-lg w-[100%] md:w-[400px] h-[auto] grid 
-                    gap-5 xllg:gap-5 xllg:grid-cols-3 grid-cols-4 border border-[text-sky-400] p-3 bg-[#4B5D67] 
+                    gap-5 xllg:gap-5 xllg:grid-cols-3 grid-cols-4 border-2 border-[#82C3EC] p-3 bg-[#4B5D67] 
                     sm:hidden'>
                      {FeaturesConfig.map((e:string, i:number)=>(
                         <FeaturesChips text={e} key={e}/>
@@ -61,28 +61,28 @@ const Welcome: React.FC<IProps> =()=>{
                    <div className='bg-blue-500 bg-clip-padding backdrop-filter bg-opacity-40 
                    flex flex-col rounded rounded-md w-[350px] sm:w-[100%] items-start justify-start mt-[20px]'>
                       
-                      <input className='m-2 w-[95%] h-[30px] bg-gray-800 bg-clip-padding backdrop-filter 
+                      <input className='m-2 mb-3 w-[95%] h-[30px] bg-gray-800 bg-clip-padding backdrop-filter 
                       bg-opacity-40 outline-none rounded rounded-sm pl-[10px]'
                         placeholder='Address to'
                         step='0.0001'
                         type='text'
                         name='addressTo'
                       />
-                      <input className='m-2 w-[95%] h-[30px] bg-gray-800 bg-clip-padding backdrop-filter 
+                      <input className='m-2 mb-3 w-[95%] h-[30px] bg-gray-800 bg-clip-padding backdrop-filter 
                       bg-opacity-40 outline-none rounded rounded-sm pl-[10px]'
                         placeholder='Amount (ETH)'
                         step='0.0001'
                         type='number'
                         name='amount'
                       />
-                      <input className='m-2 w-[95%] h-[30px] bg-gray-800 bg-clip-padding backdrop-filter 
+                      <input className='m-2 mb-3 w-[95%] h-[30px] bg-gray-800 bg-clip-padding backdrop-filter 
                       bg-opacity-40 outline-none rounded rounded-sm pl-[10px]'
                         placeholder='Keyword (GIF)'
                         step='0.0001'
                         type='text'
                         name='keyword'
                       />
-                      <input className='m-2 w-[95%] h-[30px] bg-gray-800 bg-clip-padding backdrop-filter 
+                      <input className='m-2 mb-3 w-[95%] h-[30px] bg-gray-800 bg-clip-padding backdrop-filter 
                       bg-opacity-40 outline-none rounded rounded-sm pl-[10px]'
                         placeholder='Message'
                         step='0.0001'
@@ -92,7 +92,7 @@ const Welcome: React.FC<IProps> =()=>{
                       <div className='h-[1px] w-full bg-gray-400 my-2'/>
                       {/* {isLoading?<Loader/>
                       : */}
-                      <button className='m-2 text-white w-[95%] mt-2 p-2 bg-[#8e57ed] rounded-full cursor-pointer 
+                      <button className='m-2 mb-3 text-white w-[95%] mt-2 p-2 bg-[#8e57ed] rounded-full cursor-pointer 
                       hover:scale-105 ease-in duration-500'>Send Now</button>
                     
 
