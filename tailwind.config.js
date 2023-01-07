@@ -8,10 +8,11 @@ module.exports = {
   },
   theme: {
     screens: {
-      'sm': { 'max': '480px' },
+      'sm': { 'max': '450px' },
       'md': { 'max': '800px' },
       'lg': { 'max': '1130px' },
-      'xl': { 'max': '1550px' }
+      'xl': { 'max': '1550px' },
+      'xllg': {'max':"1350px", 'min':'800px'}
     },
     extend: {},
   },

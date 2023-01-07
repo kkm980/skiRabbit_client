@@ -43,8 +43,12 @@ const Error: React.FC<IProps> = () => {
             <main>
                 <div className="">
                     
-                    <div className="overflow-hidden bg-[url('/assets/thanos.jpg')] bg-no-repeat bg-cover bg-center object-cover w-full mt-[0px] overflow-none scrollbar-hidden z-0 h-[90vh] flex flex-col items-center justify-center">
-                        <div className="flex flex-col  w-[100%] justify-center items-center text-6xl w-[80%] sm:text-2xl">
+                    <div className="overflow-hidden bg-[url('/assets/thanos.jpg')] 
+                    bg-no-repeat bg-cover bg-center object-cover w-full mt-[0px] 
+                    overflow-none scrollbar-hidden z-0 h-[90vh] flex flex-col 
+                    items-center justify-center">
+                        <div className="flex flex-col  w-[100%] justify-center 
+                        items-center text-6xl w-[80%] sm:text-2xl">
                             <h2 className="text-center text-[yellow]">
                                 Oh Snap! You are all alone here
                             </h2>
@@ -52,7 +56,8 @@ const Error: React.FC<IProps> = () => {
                                 404
                             </p>
                             <p className="text-center">
-                                Go <Link  href="/"><button className='bg-[black] rounded rounded-[32px] p-2 px-8'>back</button></Link> in Time
+                                Go <Link  href="/"><button className='bg-[black] rounded rounded-[32px] 
+                                p-2 px-8'>back</button></Link> in Time
                             </p>
                         </div>
                     </div>

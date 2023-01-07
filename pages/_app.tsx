@@ -17,7 +17,8 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [isFetching])
 
   return <Provider store={store}>
-    <div className='h-screen font-inter flex flex-col overflow-x-hidden overflow-y-auto hide-scrollbar relative bg-[#2B4F60]'
+    <div className='h-screen font-inter flex flex-col overflow-x-hidden 
+    overflow-y-auto hide-scrollbar relative bg-[#2B4F60]'
     onClick={()=>{setOpen(false)}}
     >
 
