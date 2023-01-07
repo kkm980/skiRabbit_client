@@ -72,14 +72,15 @@ const NavBar: React.FC<IProps> = ({ isOpen, setOpen }) => {
             {isOpen &&
               <Link href="/login">
                 <div className="text-[white] rounded rounded-[16px] py-[4px] px-[20px] bg-[#0F3460] 
-                hover:bg-[#7FBCD2] mb-2 mt-20 sm:mx-8 cursor-pointer"
+                hover:bg-[#7FBCD2] mb-2 mt-20 sm:mx-8 cursor-pointer absolute top-0 left-0 mx-8"
                   onClick={
                     () => { setOpen(false) }
                   }
                 >
                   Login
                 </div>
-              </Link>}
+              </Link>
+              }
           </div>
         </div>
       </div>
