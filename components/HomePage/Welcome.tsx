@@ -41,7 +41,7 @@ const Welcome: React.FC<IProps> =()=>{
                 <div className="flex flex-col w-[60%] md:w-[95%] sm:w-[50%] md:h-[auto] md:mb-4 text-white p-2 
                 items-end md:items-center">
                     <div className='bg-gradient-to-br from-indigo-500 via-red-400 to-lime-500 w-[350px] sm:w-[100%] 
-                    h-[180px] sm:mb-4 rounded rounded-lg flex flex-col justify-between'>
+                    h-[180px] sm:h-[40vw] sm:min-h-[120px] rounded rounded-lg flex flex-col justify-between'>
                         <div className='flex justify-between'>
                             <div className='border-2 border-[white] flex justify-center items-center p-1 rounded 
                             rounded-full w-10 h-10 m-4'>
@@ -52,9 +52,9 @@ const Welcome: React.FC<IProps> =()=>{
                                 <TiInfoLarge className='text-[15px]' />
                             </div>
                         </div>
-                        <div className='ml-4'>
+                        <div className='ml-4 sm:mb-4'>
                             <div className='text-white text-[15px]'>address</div>
-                            <div className='text-white text-[20px]'>Ethereum</div>
+                            <div className='text-white text-[20px] sm:text-[15px]'>Ethereum</div>
                         </div>
 
                     </div>
