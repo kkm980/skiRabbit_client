@@ -22,7 +22,7 @@ const Welcome: React.FC<IProps> =()=>{
                         Send Crypto across the world
                     </div>
                     <div className="text-[15px] text-[#80a2d9] mt-[20px] decoration-sky-600">
-                        Explore the crypto world. Buy and sell cryptocurrencies easily on SkiiRabbit
+                        Explore the crypto world. Buy and sell cryptocurrencies easily on SkiRabbit
                     </div>
                     <div className='mt-4 w-[100%] px-[5px] md:w-[400px]'>
                         <div className='flex justify-center items-center sm:w-[60%] text-[#FBF1D3] mt-2 p-2 
